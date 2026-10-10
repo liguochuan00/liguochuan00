@@ -1,0 +1,31 @@
+name: Update org stars
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sum stars of double-coding-lab repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          total=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/orgs/double-coding-lab/repos?per_page=100&type=all" \
+            | jq '[.[].stargazers_count] | add')
+          echo "{\"total_stars\": $total}" > org-stars.json
+      - name: Commit if changed
+        run: |
+          git add org-stars.json
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update org stars"
+          git push
