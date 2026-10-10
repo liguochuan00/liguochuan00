@@ -4,7 +4,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=720&lines=%E8%AE%A9%20Agent%20%E5%85%88%E8%AF%BB%E6%87%82%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%86%8D%E5%8A%A8%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81;%E6%AD%A3%E5%9C%A8%E6%9E%84%E5%BB%BA%20Flow2Spec;%E5%BC%80%E5%8F%91%E8%80%85%20%C2%B7%20AI%20Coding%20%C2%B7%20%E5%BC%80%E6%BA%90)](https://git.io/typing-svg)
 
-[![Stars](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fliguochuan00%2Fliguochuan00%2Fmain%2Forg-stars.json&query=%24.total_stars&label=Stars&style=flat-square&color=yellow&logo=github&cacheSeconds=3600)](https://github.com/orgs/double-coding-lab/repositories)
+[![Stars](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fliguochuan00%2Fliguochuan00%2Fmain%2Forg-stars.json&query=%24.total_stars&label=Stars&style=flat-square&color=yellow&logo=github)](https://github.com/orgs/double-coding-lab/repositories)
 
 </div>
 
